@@ -17,6 +17,11 @@ public class InventoryListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onPickup(PlayerPickupItemEvent event) {
+        if (!isLobbyWorld(event.getPlayer().getWorld())) return;
         event.setCancelled(true);
+    }
+
+    private boolean isLobbyWorld(org.bukkit.World world) {
+        return world != null && world.getName().equals("world");
     }
 }
