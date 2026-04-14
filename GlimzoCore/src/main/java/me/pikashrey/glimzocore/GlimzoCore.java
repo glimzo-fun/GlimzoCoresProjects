@@ -40,6 +40,7 @@ import me.pikashrey.glimzocore.placeholder.GlimzoExpansion;
 import me.pikashrey.glimzocore.tasks.AutoSaveTask;
 import me.pikashrey.glimzocore.tasks.LeaderboardTask;
 import me.pikashrey.glimzocore.tasks.SeasonTickTask;
+import me.pikashrey.glimzocore.utilities.Helpers;
 import me.pikashrey.glimzocore.utilities.chat.CC;
 import me.pikashrey.glimzocore.features.permission.PermissionCache;
 import me.pikashrey.glimzocore.features.permission.PermissionManager;
@@ -106,6 +107,8 @@ public final class GlimzoCore extends JavaPlugin {
     private me.pikashrey.glimzocore.managers.RestartManager restartManager;
     private me.pikashrey.glimzocore.features.mail.MailManager mailManager;
     private me.pikashrey.glimzocore.managers.DatabaseManager databaseManager;
+    private me.pikashrey.glimzocore.utilities.Helpers Helpers;
+
 
     private boolean disabling = false;
 
@@ -258,6 +261,7 @@ public final class GlimzoCore extends JavaPlugin {
         discordManager.enable();
         clanLeaderboard   = new ClanLeaderboard(this);
         seasonLeaderboard = new SeasonLeaderboard(this);
+        Helpers = new Helpers(this);
 
         restartManager  = new me.pikashrey.glimzocore.managers.RestartManager(this);
         mailManager     = new me.pikashrey.glimzocore.features.mail.MailManager(this);
@@ -474,4 +478,5 @@ public final class GlimzoCore extends JavaPlugin {
     public me.pikashrey.glimzocore.features.mail.MailManager getMailManager()  { return mailManager; }
     public me.pikashrey.glimzocore.managers.DatabaseManager getDatabaseManager() { return databaseManager; }
     public boolean isDisabling() { return disabling; }
+    public Helpers getHelpers() { return Helpers; }
 }

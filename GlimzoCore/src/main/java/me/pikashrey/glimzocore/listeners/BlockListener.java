@@ -30,7 +30,7 @@ public class BlockListener implements Listener {
     /** Breaking blocks - cancelled for everyone except build-mode admins. */
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onBreak(BlockBreakEvent event) {
-        if (isBuildMode(event.getPlayer())) return;
+        if (isBuildMode(event.getPlayer()) || plugin.getHelpers().isLobbyWorld(event.getPlayer().getWorld())) return;
         event.setCancelled(true);
         // Drop nothing even in survival - prevents players getting items from grass etc.
         event.setExpToDrop(0);
@@ -39,7 +39,7 @@ public class BlockListener implements Listener {
     /** Placing blocks - cancelled for everyone except build-mode admins. */
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onPlace(BlockPlaceEvent event) {
-        if (isBuildMode(event.getPlayer())) return;
+        if (isBuildMode(event.getPlayer()) || plugin.getHelpers().isLobbyWorld(event.getPlayer().getWorld())) return;
         event.setCancelled(true);
     }
 

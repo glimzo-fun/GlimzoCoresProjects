@@ -18,7 +18,8 @@ public class ItemDropListener implements Listener {
     @EventHandler(priority = EventPriority.HIGH)
     public void onDrop(PlayerDropItemEvent event) {
         // Allow staff in staff mode to drop items (so they can manage their hotbar)
-        if (plugin.getStaffManager().isInStaffMode(event.getPlayer().getUniqueId())) return;
+        //
+        if (plugin.getStaffManager().isInStaffMode(event.getPlayer().getUniqueId()) && !plugin.getHelpers().isLobbyWorld(event.getPlayer().getWorld())) return;
         event.setCancelled(true);
     }
 }

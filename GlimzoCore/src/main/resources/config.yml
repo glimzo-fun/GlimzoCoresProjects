@@ -87,6 +87,10 @@ spawn:
   yaw: 0.0
   pitch: 0.0
 
+default-world-name: "" // Default world name
+
+
+
 # VPN / Proxy detection
 # Players without Baron+ rank who connect via VPN or proxy are blocked.
 # Uses ip-api.com (free, no API key required, 45 req/min limit).

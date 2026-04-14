@@ -19,6 +19,7 @@ public class FoodListener implements Listener {
     @EventHandler(priority = EventPriority.HIGH)
     public void onFoodChange(FoodLevelChangeEvent event) {
         if (!(event.getEntity() instanceof Player)) return;
+        if(!plugin.getHelpers().isLobbyWorld(event.getEntity().getWorld())) return;
         event.setCancelled(true);
         ((Player) event.getEntity()).setFoodLevel(20);
     }
