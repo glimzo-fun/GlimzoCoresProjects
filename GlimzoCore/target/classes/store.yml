@@ -1,0 +1,142 @@
+# store.yml — Glimzo Network Store Configuration
+# ================================================
+# All prices, names, descriptions, and contents are configurable here.
+# Reload with /glimzo reload
+
+store:
+  link: "store.glimzo.fun"
+  title: "&6&lGlimzo &e&lStore"
+
+  # ── Donor Ranks ─────────────────────────────────────────────────────────
+  ranks:
+    baron:
+      display-name: "&6BARON"
+      rank-id: "baron"          # must match ranks.yml key exactly
+      price: "£2.99"
+      perks:
+        - "/fly permission"
+        - "15-player clan size"
+        - "Baron chat tag"
+    warden:
+      display-name: "&1WARDEN"
+      rank-id: "warden"
+      price: "£4.99"
+      perks:
+        - "Speed I"
+        - "20-player clan size"
+        - "Warden effects"
+    mythic:
+      display-name: "&5MYTHIC"
+      rank-id: "mythic"
+      price: "£7.99"
+      perks:
+        - "Speed II"
+        - "Jump Boost"
+        - "Mythic aura"
+    legendary:
+      display-name: "&cLEGENDARY"
+      rank-id: "legendary"
+      price: "£12.99"
+      perks:
+        - "Speed III"
+        - "30-player clan size"
+        - "Legend prefix"
+    ascendant:
+      display-name: "&eASCENDANT"
+      rank-id: "ascendant"
+      price: "£19.99"
+      perks:
+        - "Double XP"
+        - "VIP join message"
+        - "Ascendant perks"
+    cosmos:
+      display-name: "&3COSMOS"
+      rank-id: "cosmos"
+      price: "£29.99"
+      perks:
+        - "All perks included"
+        - "Cosmos aura"
+        - "Max clan size"
+
+  # ── Gem Packages ──────────────────────────────────────────────────────────
+  gem-packages:
+    starter:
+      label: "&7Starter Pack"
+      amount: 500
+      price: "£1.99"
+      popular: false
+    value:
+      label: "&aValue Pack"
+      amount: 1200
+      price: "£3.99"
+      popular: false
+    popular:
+      label: "&bPopular Pack"
+      amount: 2500
+      price: "£7.49"
+      popular: true
+    premium:
+      label: "&6Premium Pack"
+      amount: 5500
+      price: "£14.99"
+      popular: false
+    mega:
+      label: "&5Mega Pack"
+      amount: 12000
+      price: "£29.99"
+      popular: false
+    ultimate:
+      label: "&cUltimate Pack"
+      amount: 28000
+      price: "£59.99"
+      popular: false
+
+  # ── Cosmetics Bundles ─────────────────────────────────────────────────────
+  bundles:
+    aura-bundle:
+      name: "&bAura Bundle"
+      description: "All 6 Auras unlocked"
+      price: "£4.99"
+      contents:
+        - "Inferno Aura"
+        - "Magic Aura"
+        - "Rainbow + Ice + Nature + Lightning"
+    ally-bundle:
+      name: "&dAlly Bundle"
+      description: "3 Allies of your choice"
+      price: "£9.99"
+      contents:
+        - "3 ally unlocks"
+        - "Pick any 3 allies"
+        - "Includes all levels"
+    vip-bundle:
+      name: "&6VIP Bundle"
+      description: "Rank + Gems + Auras"
+      price: "£19.99"
+      contents:
+        - "Baron rank"
+        - "2500 Gems"
+        - "All auras"
+    starter-bundle:
+      name: "&5Starter Bundle"
+      description: "Everything a new player needs"
+      price: "£7.99"
+      contents:
+        - "1000 Gems"
+        - "1 Ally unlock"
+        - "3 Auras"
+
+  # ── Coin Packages ─────────────────────────────────────────────────────────
+  coin-packages:
+    handful:
+      label: "&7Handful"
+      amount: 2000
+      price: "£0.99"
+    pouch:
+      label: "&aPouch"
+      amount: 6000
+      price: "£2.49"
+    chest:
+      label: "&bChest"
+      amount: 15000
+      price: "£5.99"

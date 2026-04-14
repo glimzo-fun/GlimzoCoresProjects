@@ -1,0 +1,145 @@
+# achievements.yml — Add new achievements here without touching code.
+# Fields per achievement:
+#   display-name: Shown to the player
+#   description:  Shown in the achievements menu
+#   category:     SOCIAL | ECONOMY | LEVELING | SEASONS | GENERAL | CLANS | PUNISHMENTS
+#   xp-reward:    XP awarded on unlock (0 = none)
+#   coin-reward:  Coins awarded on unlock (0 = none)
+#   trigger:      What event triggers the check
+#     Supported triggers:
+#       LOGIN           — fires on first login ever
+#       LOGIN_STREAK    — fires when login-streak-days is reached
+#       LEVEL_REACHED   — fires when player reaches target-level
+#       FRIEND_ADDED    — fires when friend count reaches target-count
+#       CLAN_CREATED    — fires when player creates a clan
+#       CLAN_JOINED     — fires when player joins a clan
+#       COINS_EARNED    — fires when lifetime coins earned >= target-amount
+#       PRESTIGE        — fires on first prestige
+#       NICKNAME_SET    — fires when player sets a nickname
+#   # Extra fields depending on trigger:
+#   target-level:   (LEVEL_REACHED)
+#   target-count:   (FRIEND_ADDED)
+#   target-amount:  (COINS_EARNED)
+#   login-streak-days: (LOGIN_STREAK)
+
+achievements:
+  first_login:
+    display-name: "Welcome!"
+    description: "Log in for the first time"
+    category: GENERAL
+    xp-reward: 50
+    coin-reward: 0
+    trigger: LOGIN
+
+  login_7:
+    display-name: "Regular"
+    description: "Log in 7 days in a row"
+    category: GENERAL
+    xp-reward: 200
+    coin-reward: 25
+    trigger: LOGIN_STREAK
+    login-streak-days: 7
+
+  first_friend:
+    display-name: "First Friend"
+    description: "Add your first friend"
+    category: SOCIAL
+    xp-reward: 100
+    coin-reward: 50
+    trigger: FRIEND_ADDED
+    target-count: 1
+
+  ten_friends:
+    display-name: "Popular"
+    description: "Have 10 friends at once"
+    category: SOCIAL
+    xp-reward: 250
+    coin-reward: 100
+    trigger: FRIEND_ADDED
+    target-count: 10
+
+  first_clan:
+    display-name: "Clan Member"
+    description: "Join your first clan"
+    category: SOCIAL
+    xp-reward: 200
+    coin-reward: 75
+    trigger: CLAN_JOINED
+
+  clan_leader:
+    display-name: "Clan Leader"
+    description: "Create a clan"
+    category: CLANS
+    xp-reward: 500
+    coin-reward: 200
+    trigger: CLAN_CREATED
+
+  first_1k:
+    display-name: "Pocket Change"
+    description: "Earn 1,000 coins"
+    category: ECONOMY
+    xp-reward: 100
+    coin-reward: 0
+    trigger: COINS_EARNED
+    target-amount: 1000
+
+  first_10k:
+    display-name: "Getting Wealthy"
+    description: "Earn 10,000 coins"
+    category: ECONOMY
+    xp-reward: 200
+    coin-reward: 25
+    trigger: COINS_EARNED
+    target-amount: 10000
+
+  first_100k:
+    display-name: "Rich"
+    description: "Earn 100,000 coins"
+    category: ECONOMY
+    xp-reward: 500
+    coin-reward: 100
+    trigger: COINS_EARNED
+    target-amount: 100000
+
+  level_10:
+    display-name: "Getting Started"
+    description: "Reach level 10"
+    category: LEVELING
+    xp-reward: 200
+    coin-reward: 50
+    trigger: LEVEL_REACHED
+    target-level: 10
+
+  level_50:
+    display-name: "Halfway There"
+    description: "Reach level 50"
+    category: LEVELING
+    xp-reward: 500
+    coin-reward: 150
+    trigger: LEVEL_REACHED
+    target-level: 50
+
+  level_100:
+    display-name: "Max Level"
+    description: "Reach level 100"
+    category: LEVELING
+    xp-reward: 1000
+    coin-reward: 500
+    trigger: LEVEL_REACHED
+    target-level: 100
+
+  first_prestige:
+    display-name: "First Prestige"
+    description: "Prestige for the first time"
+    category: LEVELING
+    xp-reward: 1000
+    coin-reward: 500
+    trigger: PRESTIGE
+
+  first_nick:
+    display-name: "Identity Crisis"
+    description: "Set a nickname"
+    category: GENERAL
+    xp-reward: 100
+    coin-reward: 0
+    trigger: NICKNAME_SET

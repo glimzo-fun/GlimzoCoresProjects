@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GlimzoBedWars/GlimzoBedWars.iml" filepath="$PROJECT_DIR$/GlimzoBedWars/GlimzoBedWars.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GlimzoCore/GlimzoCore.iml" filepath="$PROJECT_DIR$/GlimzoCore/GlimzoCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GlimzoCore-120/GlimzoCore-120.iml" filepath="$PROJECT_DIR$/GlimzoCore-120/GlimzoCore-120.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GlimzoProxy/GlimzoProxy.iml" filepath="$PROJECT_DIR$/GlimzoProxy/GlimzoProxy.iml" />
+    </modules>
+  </component>
+</project>

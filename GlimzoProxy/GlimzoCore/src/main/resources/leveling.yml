@@ -1,0 +1,64 @@
+# leveling.yml - XP formula, level cap, prestige, and level rewards
+# ==================================================================
+
+leveling:
+  # Maximum level per prestige tier
+  max-level: 100
+
+  # XP required to level from N → N+1
+  # Formula: base-xp + (level - 1) * xp-increment
+  # Default: level 1→2 = 1000 XP, level 2→3 = 1500 XP, ..., level 99→100 = 50500 XP
+  base-xp: 1000
+  xp-increment: 500
+
+  # Percentage of player XP also awarded to their clan (0-100)
+  # 10 = 10% of earned XP goes to the clan pool
+  clan-xp-share-percent: 10
+
+prestige:
+  # Gem reward on prestige. Formula: base + (prestige_number * scaling)
+  # E.g. prestige 1 = 100+50 = 150 gems, prestige 5 = 100+250 = 350 gems
+  gem-reward-base: 100
+  gem-reward-scaling: 50
+
+  # Display symbol for prestige stars (repeated prestige times, up to max-stars)
+  star-symbol: "✦"
+  star-color: "&6"
+  max-stars: 10      # beyond this, shows [P{n}] instead of stars
+
+# Level rewards table
+# Supported types: COINS, GEMS, NONE
+# For COINS/GEMS: set amount. Leave type as NONE for no reward.
+# You can also add a 'message' field per entry for a custom broadcast.
+rewards:
+  # Every 5 levels: coins. Every 10: gems. Every 25: bigger gems.
+  # Override individual levels here - entries listed below take full priority.
+  # Fallback formula applied to levels NOT listed:
+  #   - multiple of 25: gems = 50 + (level/25)*25
+  #   - multiple of 10: gems = 25
+  #   - multiple of  5: coins = 500 * (level/5)
+  #   - otherwise: NONE
+
+  # Example overrides:
+  # 50:
+  #   type: GEMS
+  #   amount: 200
+  #   message: "&aHalf-way there! You earned &d200 gems&a!"
+  # 100:
+  #   type: GEMS
+  #   amount: 500
+  #   message: "&6&lLevel 100! Max level reached - prestige now!"
+
+
+# XP sources — how much XP players earn from in-game actions
+# Set any value to 0 to disable that source.
+xp-sources:
+  # Awarded when the player first joins (one-time welcome XP)
+  login: 50
+  # Awarded per chat message sent (with a cooldown to prevent spam)
+  chat-message: 5
+  # Chat XP cooldown in seconds — prevents farming XP by spamming chat
+  chat-cooldown-seconds: 30
+  # Awarded every time-online-interval-seconds the player is online
+  time-online: 10
+  time-online-interval-seconds: 60

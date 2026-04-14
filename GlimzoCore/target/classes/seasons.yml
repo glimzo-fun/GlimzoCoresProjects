@@ -1,0 +1,142 @@
+# seasons.yml - Season rank ladder, XP thresholds, and season pass tiers
+# =======================================================================
+
+season:
+  # Rank ladder - ordered from lowest (index 0) to highest (index N)
+  # id:           internal identifier (must be unique, no spaces)
+  # display:      shown to players
+  # color:        & color code
+  # xp-required:  cumulative season XP needed to reach this rank
+  ranks:
+    - id: bronze_1
+      display: "Bronze I"
+      color: "&6"
+      xp-required: 0
+
+    - id: bronze_2
+      display: "Bronze II"
+      color: "&6"
+      xp-required: 500
+
+    - id: bronze_3
+      display: "Bronze III"
+      color: "&6"
+      xp-required: 1200
+
+    - id: silver_1
+      display: "Silver I"
+      color: "&7"
+      xp-required: 2200
+
+    - id: silver_2
+      display: "Silver II"
+      color: "&7"
+      xp-required: 3500
+
+    - id: silver_3
+      display: "Silver III"
+      color: "&7"
+      xp-required: 5200
+
+    - id: gold_1
+      display: "Gold I"
+      color: "&e"
+      xp-required: 7500
+
+    - id: gold_2
+      display: "Gold II"
+      color: "&e"
+      xp-required: 10500
+
+    - id: gold_3
+      display: "Gold III"
+      color: "&e"
+      xp-required: 14000
+
+    - id: platinum_1
+      display: "Platinum I"
+      color: "&b"
+      xp-required: 18500
+
+    - id: platinum_2
+      display: "Platinum II"
+      color: "&b"
+      xp-required: 24000
+
+    - id: platinum_3
+      display: "Platinum III"
+      color: "&b"
+      xp-required: 30500
+
+    - id: diamond_1
+      display: "Diamond I"
+      color: "&3"
+      xp-required: 38000
+
+    - id: diamond_2
+      display: "Diamond II"
+      color: "&3"
+      xp-required: 47000
+
+    - id: diamond_3
+      display: "Diamond III"
+      color: "&3"
+      xp-required: 57500
+
+    - id: master
+      display: "Master"
+      color: "&5"
+      xp-required: 70000
+
+    - id: grandmaster
+      display: "Grandmaster"
+      color: "&d"
+      xp-required: 90000
+
+    - id: legend
+      display: "Legend"
+      color: "&4"
+      xp-required: 120000
+
+  # Season pass tiers - one per season rank (in the same order)
+  # free-rewards:    list of "type:amount" - given to all players on rank-up
+  # premium-rewards: list of "type:amount" - given only to season pass holders
+  # Supported types: coins, gems
+  pass-tiers:
+    - free:    ["coins:500"]
+      premium: ["gems:10",  "coins:1000"]
+    - free:    ["coins:1000"]
+      premium: ["gems:20",  "coins:2000"]
+    - free:    ["coins:1500"]
+      premium: ["gems:30",  "coins:3000"]
+    - free:    ["coins:2000"]
+      premium: ["gems:40",  "coins:4000"]
+    - free:    ["coins:2500"]
+      premium: ["gems:50",  "coins:5000"]
+    - free:    ["coins:3000"]
+      premium: ["gems:60",  "coins:6000"]
+    - free:    ["coins:3500"]
+      premium: ["gems:70",  "coins:7000"]
+    - free:    ["coins:4000"]
+      premium: ["gems:80",  "coins:8000"]
+    - free:    ["coins:4500"]
+      premium: ["gems:90",  "coins:9000"]
+    - free:    ["coins:5000"]
+      premium: ["gems:100", "coins:10000"]
+    - free:    ["coins:5500"]
+      premium: ["gems:110", "coins:11000"]
+    - free:    ["coins:6000"]
+      premium: ["gems:120", "coins:12000"]
+    - free:    ["coins:6500"]
+      premium: ["gems:130", "coins:13000"]
+    - free:    ["coins:7000"]
+      premium: ["gems:140", "coins:14000"]
+    - free:    ["coins:7500"]
+      premium: ["gems:150", "coins:15000"]
+    - free:    ["coins:8000"]
+      premium: ["gems:160", "coins:16000"]
+    - free:    ["coins:9000"]
+      premium: ["gems:180", "coins:18000"]
+    - free:    ["coins:10000"]
+      premium: ["gems:200", "coins:20000"]
+

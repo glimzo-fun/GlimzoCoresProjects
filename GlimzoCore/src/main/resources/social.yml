@@ -1,0 +1,26 @@
+# social.yml - Friends, parties, clans, and nick social limits
+# ============================================================
+
+friends:
+  # How long a friend request stays pending before expiring (seconds)
+  request-ttl-seconds: 120
+  # Maximum friends per player (0 = unlimited)
+  max-friends: 100
+
+party:
+  # How long a party invite stays pending before expiring (seconds)
+  invite-ttl-seconds: 60
+  # Maximum players in a single party (including leader)
+  max-size: 16
+
+clans:
+  # How long a clan invite stays pending before expiring (seconds)
+  invite-ttl-seconds: 120
+
+nicks:
+  # Maximum nickname length (after stripping color codes)
+  max-length: 16
+  # Regex pattern for valid nick characters (before color code stripping)
+  # Default allows letters, digits, underscore, and & for color codes
+  allowed-pattern: "^[a-zA-Z0-9_&]+$"
+

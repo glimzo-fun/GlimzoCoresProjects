@@ -1,0 +1,26 @@
+# announcer.yml — Server announcements configuration.
+# interval-ticks: How often to broadcast (20 ticks = 1 second, 1200 = 1 minute)
+# random: true = pick a random announcement each time, false = rotate in order
+# Each announcement is a list of lines broadcast together as one message block.
+
+interval-ticks: 1200
+random: false
+
+announcements:
+  - lines:
+      - "&2&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - "    &a&l🌿 Welcome to &2&lGlimzo Network &a&l🌿"
+      - "&8   The forest awaits you — play.glimzo.fun"
+      - "&2&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+  - lines:
+      - "&2&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - "  &7Join our community &8» &adiscord.gg/glimzo"
+      - "  &7Support the server &8» &2store.glimzo.fun"
+      - "&2&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+  - lines:
+      - "&2&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - "  &aNew to Glimzo? &7Type &f/help &7to get started!"
+      - "  &7Level up to unlock &6exclusive rewards&7!"
+      - "&2&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

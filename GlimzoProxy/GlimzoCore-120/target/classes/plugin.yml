@@ -1,0 +1,14 @@
+name: GlimzoCore-120
+version: 1.0.0
+main: me.pikashrey.glimzocore120.GlimzoCore120
+api-version: 1.20
+authors: [pikashrey]
+description: GlimzoCore for 1.20 servers
+
+commands:
+  coins:
+    description: Manage coins
+    usage: /coins [add|remove|set] [player] [amount]
+  rank:
+    description: Manage ranks
+    usage: /rank <player> | /rank set <player> <rank>

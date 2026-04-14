@@ -1,0 +1,169 @@
+# cosmetics.yml - Visual tuning and unlock costs for cosmetic effects
+# ===================================================================
+# Changing these values requires a /glimzo reload (no restart needed).
+
+auras:
+  unlock-costs:
+    inferno_aura: 250
+    magic_aura: 200
+    rainbow_aura: 300
+    ice_aura: 275
+    nature_aura: 225
+    lightning_aura: 350
+
+wings:
+  update-interval-ticks: 2
+  render-distance: 48
+  unlock-costs:
+    angel_wings: 400
+    dragon_wings: 600
+    phoenix_wings: 550
+    demon_wings: 500
+    butterfly_wings: 350
+    energy_wings: 450
+
+morphs:
+  unlock-costs:
+    blaze: 400
+    slime: 250
+    creeper: 300
+    chicken: 200
+    bat: 275
+    enderman: 450
+
+allies:
+  update-interval-ticks: 4
+  render-distance: 48
+  meals-per-level: 10
+  unlock-costs:
+    charizard: 500
+    dr_ducky: 400
+    falcon: 450
+    kitty: 350
+    mr_panda: 300
+    pug: 400
+
+chat-tags:
+  unlock-costs:
+    savage: 100
+    chill: 100
+    goat: 300
+    vip: 200
+    legend: 400
+    chief: 500
+    og: 350
+    galaxy: 250
+    pro: 150
+    grinder: 150
+
+join-effects:
+  unlock-costs:
+    lightning: 300
+    dragon: 500
+    meteor: 400
+
+ally-meals:
+  # Gem cost to buy 1 of each meal
+  gem-costs:
+    nutella: 50
+    glass_of_beer: 30
+    bread: 20
+    cheese: 25
+    strawberry_jam: 35
+    cake: 60
+    cherry: 20
+    apple: 15
+    melon: 15
+    strawberry: 20
+    coconut: 30
+    tomato: 15
+    ham: 40
+    pink_frosted_donut: 45
+    chocolate_donut: 45
+    oreo: 35
+    hamburger: 50
+    sushi_roll: 55
+    coffee_cup: 30
+    coca_cola: 25
+    ramen: 50
+    soup: 35
+    spaghetti: 50
+    sandwich: 40
+    cheeseburger: 55
+    chocolate_cake: 65
+    chocolate: 40
+    plum: 20
+    blueberry: 20
+    french_fries: 35
+    taco: 45
+    sushi: 55
+
+  # Coin cost to buy 1 of each meal
+  coin-costs:
+    nutella: 200
+    glass_of_beer: 120
+    bread: 80
+    cheese: 100
+    strawberry_jam: 140
+    cake: 250
+    cherry: 80
+    apple: 60
+    melon: 60
+    strawberry: 80
+    coconut: 120
+    tomato: 60
+    ham: 160
+    pink_frosted_donut: 180
+    chocolate_donut: 180
+    oreo: 140
+    hamburger: 200
+    sushi_roll: 220
+    coffee_cup: 120
+    coca_cola: 100
+    ramen: 200
+    soup: 140
+    spaghetti: 200
+    sandwich: 160
+    cheeseburger: 220
+    chocolate_cake: 260
+    chocolate: 160
+    plum: 80
+    blueberry: 80
+    french_fries: 140
+    taco: 180
+    sushi: 220
+
+  # How many PetMeal XP points each food gives when fed to an ally
+  xp-values:
+    nutella: 3
+    glass_of_beer: 1
+    bread: 1
+    cheese: 2
+    strawberry_jam: 2
+    cake: 4
+    cherry: 1
+    apple: 1
+    melon: 1
+    strawberry: 1
+    coconut: 2
+    tomato: 1
+    ham: 3
+    pink_frosted_donut: 3
+    chocolate_donut: 3
+    oreo: 2
+    hamburger: 4
+    sushi_roll: 4
+    coffee_cup: 2
+    coca_cola: 1
+    ramen: 4
+    soup: 2
+    spaghetti: 4
+    sandwich: 3
+    cheeseburger: 4
+    chocolate_cake: 5
+    chocolate: 3
+    plum: 1
+    blueberry: 1
+    french_fries: 2
+    taco: 3
+    sushi: 4
