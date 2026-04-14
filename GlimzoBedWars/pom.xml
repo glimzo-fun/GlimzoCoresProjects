@@ -24,27 +24,20 @@
 
     <dependencies>
         <!-- Spigot 1.8.8 -->
+
         <dependency>
             <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
+            <artifactId>spigot-api</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
-        <!-- GlimzoCore — provided at runtime by the server -->
-        <dependency>
-            <groupId>me.pikashrey</groupId>
-            <artifactId>GlimzoCore</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
 
         <!-- BedWars1058 jar installed locally via mvn install:install-file -->
         <dependency>
-            <groupId>com.andrei1058</groupId>
-            <artifactId>bedwars1058</artifactId>
+            <groupId>com.andrei1058.bedwars1058</groupId>
+            <artifactId>bedwars1058-api</artifactId>
             <version>22.9-SNAPSHOT</version>
-            <scope>provided</scope>
         </dependency>
 
         <!-- MySQL driver -->

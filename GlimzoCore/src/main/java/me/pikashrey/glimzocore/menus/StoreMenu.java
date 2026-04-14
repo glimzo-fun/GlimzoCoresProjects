@@ -125,11 +125,12 @@ public class StoreMenu extends GlimzoMenu {
             @Override public ItemStack getItem() {
                 return new ItemBuilder(Material.GOLD_NUGGET)
                         .name("&e&lCoins")
+                        .lore(
                               "&7Coins are &aearned &7by playing -",
                               "&7leveling up, completing quests,",
                               "&7and participating in events.",
                               "",
-                              "&cCoins cannot be purchased.",
+                              "&cCoins cannot be purchased.")
                         .build();
             }
             @Override public void onClick(Player p, InventoryClickEvent e) {
@@ -183,12 +184,15 @@ public class StoreMenu extends GlimzoMenu {
                 if (blocked) {
                     boolean same = targetRank != null && playerRank != null
                             && targetRank.getWeight() == playerRank.getWeight();
-                    return new ItemBuilder(Material.INK_SACK).durability((short) 8)
+                    return new ItemBuilder(Material.INK_SACK)
+                            .durability((short) 8)
                             .name("&7" + displayName.replaceAll("&[0-9a-fk-or]", "").trim())
-                                    same ? "&cYou already have this rank!"
-                                            : "&cYou have a higher rank!",
+                            .lore(
+                                    same ? "&cYou already have this rank!" : "&cYou have a higher rank!",
                                     "&8Price: &7" + price,
-                                    "&8Not available for you.").build();
+                                    "&8Not available for you."
+                            )
+                            .build();
                 }
 
                 List<String> lore = new ArrayList<>();

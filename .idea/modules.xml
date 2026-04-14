@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/GlimzoCore/GlimzoCore.iml" filepath="$PROJECT_DIR$/GlimzoCore/GlimzoCore.iml" />
       <module fileurl="file://$PROJECT_DIR$/GlimzoCore-120/GlimzoCore-120.iml" filepath="$PROJECT_DIR$/GlimzoCore-120/GlimzoCore-120.iml" />
       <module fileurl="file://$PROJECT_DIR$/GlimzoProxy/GlimzoProxy.iml" filepath="$PROJECT_DIR$/GlimzoProxy/GlimzoProxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glimzo-common/glimzo-common.iml" filepath="$PROJECT_DIR$/glimzo-common/glimzo-common.iml" />
     </modules>
   </component>
 </project>
