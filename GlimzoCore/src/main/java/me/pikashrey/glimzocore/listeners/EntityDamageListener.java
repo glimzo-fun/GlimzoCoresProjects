@@ -1,6 +1,7 @@
 package me.pikashrey.glimzocore.listeners;
 
 import me.pikashrey.glimzocore.GlimzoCore;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -17,6 +18,10 @@ public class EntityDamageListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onDamage(EntityDamageEvent event) {
-        event.setCancelled(true);
+        if (!(event.getEntity() instanceof Player)) return;
+        if(plugin.getHelpers().isLobbyWorld(event.getEntity().getWorld())) {
+            event.setCancelled(true);
+            return;
+        }
     }
 }
