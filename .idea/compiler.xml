@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="glimzo-common" />
         <module name="GlimzoCore-120" />
         <module name="GlimzoCore" />
         <module name="GlimzoBedWars" />
@@ -58,5 +57,8 @@
         <module name="GlimzoProxy" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="glimzo-common" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
