@@ -19,7 +19,6 @@ public class InventoryListener implements Listener {
     public void onPickup(PlayerPickupItemEvent event) {
         if (plugin.getHelpers().isLobbyWorld(event.getPlayer().getWorld())) {
             event.setCancelled(true);
-            return;
         }
     }
 }
